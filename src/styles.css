@@ -41,9 +41,9 @@ body {
 }
 
 .a-button-add-quantity {
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(218, 218, 218);
   color: black;
-  border: rgb(192, 192, 192) solid;
+  border: rgb(218, 218, 218) solid;
 }
 
 .a-button-add-quantity:hover {
@@ -53,9 +53,9 @@ body {
 }
 
 .a-button-remove {
-background-color: rgb(192, 192, 192);
+background-color: rgb(218, 218, 218);
 color: black;
-border: rgb(192, 192, 192) solid;
+border: rgb(218, 218, 218) solid;
 }
 
 .a-button-remove:hover {
