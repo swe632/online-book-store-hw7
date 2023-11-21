@@ -99,4 +99,8 @@ export class CartComponent {
     //   this.message = '';
     // }, 3000);
   }
+
+  viewProductDetails(id: number) {
+    this.router.navigateByUrl("/product/" + id);
+  }
 }

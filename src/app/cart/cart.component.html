@@ -32,7 +32,7 @@
       <div *ngFor="let book of cart" class="card mt-3" [ngClass]="{'border-danger': book.selected}">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <div class="d-flex align-items-center mt-2">
+            <div class="d-flex align-items-center mt-2 clickable-card" (click)="viewProductDetails(book.id)">
               <div class="px-4">
                 <input type="checkbox" [(ngModel)]="book.selected" (click)="selectItem(book)">
               </div>
@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body clickable-card" (click)="viewProductDetails(book.id)">
               <h5 class="card-title">{{ book.title }}</h5>
               <p class="card-text">Author: {{ book.author }}</p>
               <p class="card-text">Price: {{ book.price | currency}}</p>

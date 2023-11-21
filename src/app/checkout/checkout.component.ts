@@ -76,4 +76,7 @@ export class CheckoutComponent {
       0
     );
   }
+  viewProductDetails(id: number) {
+    this.router.navigateByUrl("/product/" + id);
+  }
 }
