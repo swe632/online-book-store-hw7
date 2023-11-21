@@ -9,7 +9,7 @@
                 <!-- <ng-container *ngFor="let c of books"> -->
                 <div class="col-md-2 mb-5"  (click)="viewProductDetails(book.id)" >
                     <div class="card clickable-card" style="width: 18rem; ">
-                        <img src="assets/book1.jpg" (click)="viewProductDetails(book.id)" class="card-img-top ;"
+                        <img [src]="book.image" (click)="viewProductDetails(book.id)" class="card-img-top ;"
                             alt="Book 1">
                         <div class="card-body">
                             <p class="card-title"><b>{{book.title}}</b></p>
