@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-
+body {
+  background-color: #f0f0f0; /* Light grey color */
+}
 .btn {
-  background: #7B68EE;
+  background: #232f3e;
+}
+.btn:hover {
+  background: #334458;
 }
 
 .a-button-details {
@@ -11,7 +16,7 @@
 }
 
 .a-button-details:hover {
-  background-color: #FA8900;
+  background-color:  #ff9a01;
 }
 
 
@@ -22,29 +27,29 @@
 }
 
 .a-button-add:hover {
-  background-color: #F0B800;
+  background-color:#febd69;
 }
 
 .a-button-add-quantity {
-background-color: #198754;
-color: white;
-border: #198754 solid;
+  background-color: rgb(192, 192, 192);
+  color: black;
+  border: rgb(192, 192, 192) solid;
 }
 
 .a-button-add-quantity:hover {
-background-color: white;
-color: #198754;
-border: #198754 solid;
+  color: black;
+  border: #232f3e solid;
+  background-color: #ffffff;
 }
 
 .a-button-remove {
-background-color: red;
-color: white;
-border: red solid;
+background-color: rgb(192, 192, 192);
+color: black;
+border: rgb(192, 192, 192) solid;
 }
 
 .a-button-remove:hover {
-color: red;
-border: red solid;
-background-color: white;
+color: black;
+border: #232f3e solid;
+background-color: #ffffff;
 }

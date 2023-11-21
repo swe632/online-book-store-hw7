@@ -1,22 +1,22 @@
-<div class="container mt-5">
+<div class="container mt-5" >
     <h1 class="heading">Book Listing</h1>
     <div *ngIf="showMessage" class="alert alert-success">
         {{ message }}
     </div>
     <div *ngIf="filteredBooks.length > 0; else noResultsFound">
-        <div class="row mt-3">
+        <div class="row mt-2">
             <ng-container *ngFor="let book of filteredBooks">
                 <!-- <ng-container *ngFor="let c of books"> -->
-                <div class="col-md-2 mb-3">
-                    <div class="card clickable-card" style="width: 16rem;">
-                        <img src="assets/book1.jpg" (click)="viewProductDetails(book.id)" class="card-img-top"
+                <div class="col-md-2 mb-5"  (click)="viewProductDetails(book.id)" >
+                    <div class="card clickable-card" style="width: 18rem; ">
+                        <img src="assets/book1.jpg" (click)="viewProductDetails(book.id)" class="card-img-top ;"
                             alt="Book 1">
                         <div class="card-body">
                             <p class="card-title"><b>{{book.title}}</b></p>
-                            <p class="card-text" style="color: gray;">Author: {{book.author}}</p>
-                            <p class="card-text">Price: ${{book.price}}</p>
-                            <a class="btn btn-sm a-button-add rounded-corners" (click)="addToCart(book)"
-                                *ngIf="book.inCart < 1">Add to Cart</a>
+                            <p class="card-text" style="color: gray;">{{book.author}}</p>
+                            <p class="card-text" style="font-weight: bold;">${{book.price}}</p>
+                            <a class="btn btn-md a-button-add rounded-corners" (click)="addToCart(book)"
+                                *ngIf="book.inCart < 1"  style="border-radius: 10px;">Add to Cart</a>
                             <span *ngIf="book.inCart>0">
                                 <button class="btn btn-sm btn-danger a-button-remove rounded-corners"
                                     (click)="removeFromCart(book); $event.stopPropagation();">
@@ -27,10 +27,9 @@
                                     (click)="increaseQuantity(book); $event.stopPropagation();">
                                     <strong style="font-size: 13px;">+</strong>
                                 </button>
-                            </span>
-                            &nbsp;
-                            <a class="btn btn-sm a-button-details rounded-corners"
-                                (click)="viewProductDetails(book.id)">Details</a>
+                            </span>&nbsp;
+    
+                            <button (click)="buyNow(book)" class="btn btn-md a-button-details rounded-corners"  style="border-radius: 10px;">Buy Now</button> 
                         </div>
                     </div>
                 </div>
@@ -41,7 +40,7 @@
     </div>
 </div>
 <ng-template #noResultsFound>
-    <div class="container mt-5 text-center">
+    <div class="container mt-5 text-center" style="padding-bottom: 100px">
         <p class="alert alert-info">Cannot find the book? <br> Request your book <a routerLink="/req-book" >here</a>
     </div>
 </ng-template>

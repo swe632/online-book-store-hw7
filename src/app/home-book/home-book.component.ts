@@ -84,4 +84,9 @@ export class HomeBookComponent {
     this.cartService.removeFromCart(book);
     this.cart = this.cartService.getCart(); // Update the cart data after removal
   }
+  buyNow(book: Book): void {
+    // Add the selected book to the cart
+    this.addToCart(book); // Redirect the user to the checkout page
+    this.router.navigateByUrl("/checkout");
+  }
 }
