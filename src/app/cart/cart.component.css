@@ -9,3 +9,11 @@
 .padding-header {
   padding-top: 3%;
 }
+
+.clickable-card {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
