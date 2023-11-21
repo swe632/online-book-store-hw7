@@ -14,11 +14,11 @@
       <img src="assets/book1.jpg" alt="{{ product.title }}" class="img-fluid" />
     </div>
     <div class="col-md-8 product-info">
-      <h2>{{ product.title }}</h2>
-      <p>Author: {{ product.author }}</p>
-      <p>Price:  &nbsp;<strong>${{ product.price }}</strong></p>
+      <h4>{{ product.title }}</h4>
+      <p style="color: gray;">by {{ product.author }}</p>
+      <p style="font-size: x-large;"><strong>${{ product.price }}</strong></p>
       <div class="mb-3">
-        <strong>Description:</strong>
+        <b style="font-weight: 600;">Description:</b>
         <p>{{ product.description }}</p>
       </div>
   

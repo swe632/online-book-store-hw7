@@ -25,7 +25,7 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">{{ book.title }}</h5>
-                <p class="card-text">Author: {{ book.author }}</p>
+                <p class="card-text" style="color: gray;">Author: {{ book.author }}</p>
                 <h1 class="badge bg-light text-dark">Quantity: {{ book.quantity }}</h1><br>
                 <p class="badge bg-light text-dark card-text">Price: {{ book.price * book.quantity | currency }}</p>
               </div>
@@ -119,7 +119,7 @@
         </div>
       </div>
 
-      <button class="btn btn-primary" type="submit" [disabled]="!orderForm.valid" data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order</button>
+      <button class="btn btn-primary a-button-submit btn-submita" type="submit" [disabled]="!orderForm.valid" data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order</button>
     </form>
   </div>
 
@@ -143,9 +143,9 @@
       <div *ngIf="showMessage && orderForm.valid" class="alert alert-success mt-3">
         {{ message }}
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" (click)="placeOrder()">Confirm</button>
+      <div class="modal-footer custom-background">
+        <button type="button " class="btn btn-secondary a-button-submit" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary a-button-submit" (click)="placeOrder()">Confirm</button>
       </div>
     </div>
   </div>

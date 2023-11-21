@@ -15,6 +15,16 @@ body {
   color: #000;
 }
 
+.a-button-submit {
+  background-color: #F7CA00;
+  border: #F7CA00;
+  color: black;
+}
+.btn-submita:disabled {
+  background-color: #F7CA00;
+  border: #F7CA00;
+  color: black;
+}
 .a-button-details:hover {
   background-color:  #ff9a01;
 }
@@ -53,3 +63,4 @@ color: black;
 border: #232f3e solid;
 background-color: #ffffff;
 }
+
