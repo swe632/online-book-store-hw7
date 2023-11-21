@@ -13,3 +13,7 @@
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+.custom-background {
+  background-color: rgba(237, 234, 234, 0.685); 
+  border: none;
+}

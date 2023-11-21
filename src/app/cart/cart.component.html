@@ -42,8 +42,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">{{ book.title }}</h5>
-              <p class="card-text">Author: {{ book.author }}</p>
-              <p class="card-text">Price: {{ book.price | currency}}</p>
+              <p class="card-text" style="color: gray;">Author: {{ book.author }}</p>
+              <p class="card-text" style="font-size: large;"><b>{{ book.price | currency}}</b></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <div class="input-group mb-3">
