@@ -32,11 +32,13 @@
       <div *ngFor="let book of cart" class="card mt-3" [ngClass]="{'border-danger': book.selected}">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <div class="d-flex align-items-center mt-2 clickable-card" (click)="viewProductDetails(book.id)">
+            <div class="d-flex align-items-center mt-3 clickable-card" >
               <div class="px-4">
                 <input type="checkbox" [(ngModel)]="book.selected" (click)="selectItem(book)">
               </div>
+              <div class="clickable-card" (click)="viewProductDetails(book.id)">
               <img src="assets/book1.jpg" alt="Book Cover" width="35%" class="img-thumbnail">
+            </div>
             </div>
           </div>
           <div class="col-md-8">
