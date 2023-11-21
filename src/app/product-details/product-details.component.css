@@ -10,15 +10,3 @@
     border-radius: 25px;
 }
 
-.ngx-image-zoom-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .ngx-image-zoom-window {
-    border: 2px solid #ddd; /* Set border color */
-    position: absolute;
-    background-color: #fff;
-    cursor: zoom-in;
-  }
