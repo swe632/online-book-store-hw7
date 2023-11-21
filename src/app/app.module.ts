@@ -17,6 +17,7 @@ import { CartService } from './service/cart.service';
 import { ProductService } from './service/product.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { ProductService } from './service/product.service';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule
+  
   ],
   providers: [CartService, ProductService],
   bootstrap: [AppComponent]
