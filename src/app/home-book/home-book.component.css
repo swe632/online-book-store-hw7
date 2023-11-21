@@ -1,0 +1,20 @@
+.heading{
+    text-align: center;
+    padding-top:3%;
+    padding-bottom:4%;
+}
+
+.listing{
+    padding-bottom: 5%;
+}
+.clickable-card {
+    cursor: pointer;
+}
+
+.rounded-corners {
+    border-radius: 25px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

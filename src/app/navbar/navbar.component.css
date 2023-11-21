@@ -1,0 +1,49 @@
+.bg-medium-slate-blue {
+  background-color: #232f3e;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+
+.nav-link {
+  color: white !important;
+  text-transform: capitalize;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo, .nav-item {
+  border: .25px transparent solid; /* Set transparent initially */
+}
+
+.logo:hover, .nav-item:hover {
+  border: .25px white solid;
+}
+
+@media (max-width: 767px) {
+  .nav-item-right {
+    margin-left: 0px;     
+  }
+}
+
+.search {
+  cursor: pointer;
+  /* background-color: #f90; */
+  background-color: #febd69;
+  border: #febd69;
+  color: rgb(81, 73, 73);
+}
+
+.search:hover{
+  background-color: #ff9a01;
+}
+
+#search {
+  border: white;
+}
+
