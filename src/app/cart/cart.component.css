@@ -1,9 +1,9 @@
 .pad {
-  padding-bottom: 100px; /* Adjust this value as needed */
+  padding-bottom: 200px; /* Adjust this value as needed */
 }
 
 .content-pad {
-    padding-bottom: 240px;
+    padding-bottom: 20px;
 }
 
 .padding-header {
