@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CartService } from './service/cart.service';
 import { ProductService } from './service/product.service';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ProductService } from './service/product.service';
     MatIconModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxImageZoomModule
   ],
   providers: [CartService, ProductService],
   bootstrap: [AppComponent]
