@@ -104,3 +104,4 @@ export class CartComponent {
     this.router.navigateByUrl("/product/" + id);
   }
 }
+
