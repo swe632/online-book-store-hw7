@@ -11,12 +11,12 @@
 </div>
   <div class="row">
     <div class="col-md-4 product-image pad" style="width: 16rem;">
-      <img src="assets/book1.jpg" alt="{{ product.title }}" class="img-fluid" />
+      <img [src]="product.image" alt="{{ product.title }}" class="img-fluid" />
     </div>
     <div class="col-md-8 product-info">
       <h2>{{ product.title }}</h2>
-      <p>Author: {{ product.author }}</p>
-      <p>Price:  &nbsp;<strong>${{ product.price }}</strong></p>
+      <p>{{ product.author }}</p>
+      <p><strong>${{ product.price }}</strong></p>
       <div class="mb-3">
         <strong>Description:</strong>
         <p>{{ product.description }}</p>
